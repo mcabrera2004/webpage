@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
@@ -13,10 +14,6 @@ export default function Header() {
             ))}
           </ul>
         </nav>
-        <div className="search-bar" style={{ display: 'flex', alignItems: 'center', marginLeft: '1.5rem' }}>
-          <input type="text" placeholder="Buscar..." style={{ padding: '0.5rem', border:'none', borderRadius:'4px 0 0 4px', width:'190px' }} />
-          <button type="submit" className="btn btn-header">Buscar</button>
-        </div>
       </div>
     </header>
   );

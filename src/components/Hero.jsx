@@ -1,4 +1,5 @@
 import React from 'react';
+
 export default function Hero() {
   return (
     <section className="hero" style={{ backgroundImage: "url('https://myersparkpres.org/wp-content/uploads/2023/05/Sanctuary-Worship_web.jpg')", backgroundSize:'cover', backgroundPosition:'center', color:'#fff', textAlign:'center', padding:'5rem 1rem', position:'relative' }}>
@@ -6,7 +7,38 @@ export default function Hero() {
       <div className="hero-content" style={{ position:'relative', maxWidth:'800px', margin:'0 auto' }}>
         <h1 style={{ fontSize:'3rem', marginBottom:'1.5rem' }}>Explorando la Teología Reformada</h1>
         <p style={{ fontSize:'1.2rem', marginBottom:'2rem', color:'var(--color-light)' }}>Un repositorio de artículos, libros y recursos para profundizar en la comprensión de las doctrinas reformadas y la fe histórica de la iglesia.</p>
-        <a href="/articulos" className="btn btn-primary">Explorar Artículos</a>
+        
+        <div className="hero-search-bar" style={{ display: 'flex' }}>
+          <input 
+            type="text" 
+            placeholder="Buscar artículos, libros y recursos..." 
+            className="hero-search-input" 
+            style={{ 
+              padding: '0.75rem', 
+              border: 'none', 
+              borderRadius: '4px 0 0 4px',
+              width: '100%',
+              fontSize: '1rem',
+              height: '45px'
+            }}
+          />
+          <button 
+            type="submit" 
+            className="btn btn-header"
+            style={{
+              backgroundColor: 'var(--color-secondary)',
+              color: '#fff',
+              borderRadius: '0 4px 4px 0',
+              border: 'none',
+              padding: '0 1.5rem',
+              fontWeight: '600',
+              cursor: 'pointer',
+              height: '45px'
+            }}
+          >
+            Buscar
+          </button>
+        </div>
       </div>
     </section>
   );
