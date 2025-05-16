@@ -30,7 +30,6 @@ img { max-width: 100%; height: auto; }
 @media (max-width: 768px) { 
   .nav-toggle { display: block; } 
   .main-nav { 
-    display: none; 
     position: absolute;
     top: 100%;
     left: 0;
@@ -38,15 +37,24 @@ img { max-width: 100%; height: auto; }
     background-color: var(--color-primary);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     z-index: 100;
-    overflow-x: hidden;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
   .main-nav.active { 
-    display: block; 
+    max-height: 500px;
+    opacity: 1;
   }
   .main-nav ul {
     flex-direction: column !important;
     width: 100%;
     padding: 0.5rem 0;
+    transform: translateY(-20px);
+    transition: transform 0.5s ease-in-out;
+  }
+  .main-nav.active ul {
+    transform: translateY(0);
   }
   .main-nav li {
     margin: 0 !important;
@@ -58,5 +66,4 @@ img { max-width: 100%; height: auto; }
     text-align: left;
     border-bottom: 1px solid rgba(255,255,255,0.1);
   }
-  .hero-search-bar { max-width: 90%; }
 }
