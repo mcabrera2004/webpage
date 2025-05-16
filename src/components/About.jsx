@@ -10,7 +10,7 @@ export default function About() {
             <p>Creemos en la autoridad suprema de las Escrituras, la soberanía de Dios en la salvación, y la centralidad de Cristo en toda la teología. Trabajamos para traducir y producir contenido que ayude a los cristianos a profundizar en estas verdades.</p>
             <a href="/acerca" className="btn btn-primary" style={{ marginTop: '1rem' }}>Conocer Más</a>
           </div>
-          <div className="about-img" style={{ height:'100%', minHeight:'300px', backgroundImage:"url('/api/placeholder/600/400')", backgroundSize:'cover', backgroundPosition:'center', borderRadius:'8px' }} />
+          <div className="about-img" style={{ height:'100%', minHeight:'300px', backgroundImage:"url('https://proyectoevanggelio.org/wp-content/uploads/19-de-abril-.jpg)", backgroundSize:'cover', backgroundPosition:'center', borderRadius:'8px' }} />
         </div>
       </div>
     </section>
