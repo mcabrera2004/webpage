@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="header" style={{ backgroundColor: 'var(--color-primary)', color: '#fff', padding: '1rem 0', position: 'sticky', top: 0, zIndex: 100, boxShadow: '0 2px 10px rgba(0,0,0,0.1)' }}>
+    <header className="header animated-header">
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <a href="/" className="logo" style={{ fontSize: '1.8rem', fontWeight: 700, color: '#fff' }}>Sola Scriptura</a>
         <button className="nav-toggle" onClick={() => setOpen(!open)}>☰</button>

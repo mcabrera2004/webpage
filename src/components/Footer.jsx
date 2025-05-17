@@ -1,12 +1,14 @@
 import React from 'react';
+
 const links = {
   'Enlaces Rápidos': ['Inicio', 'Artículos', 'Libros', 'Estudios Bíblicos', 'Recursos'],
   'Categorías': ['Soteriología', 'Historia de la Iglesia', 'Doctrina Bíblica', 'Apologética', 'Vida Cristiana'],
   'Contacto': ['info@solascriptura.org', '(123) 456-7890', 'Formulario de Contacto']
 };
+
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor:'var(--color-dark)', color:'#fff', padding:'4rem 0 2rem' }}>
+    <footer className="animated-gradient-footer" style={{ color:'#fff', padding:'4rem 0 2rem' }}>
       <div className="container" style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(200px,1fr))', gap:'2rem', marginBottom:'3rem' }}>
         <div className="footer-col">
           <h3 style={{ color:'var(--color-secondary)', marginBottom:'1.5rem', fontSize:'1.2rem' }}>Sola Scriptura</h3>
