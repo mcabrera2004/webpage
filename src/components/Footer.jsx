@@ -8,7 +8,7 @@ const links = {
 
 export default function Footer() {
   return (
-    <footer className="animated-gradient-footer" style={{ color:'#fff', padding:'4rem 0 2rem' }}>
+    <footer className="footer" style={{ padding:'4rem 0 2rem' }}>
       <div className="container" style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(200px,1fr))', gap:'2rem', marginBottom:'3rem' }}>
         <div className="footer-col">
           <h3 style={{ color:'var(--color-secondary)', marginBottom:'1.5rem', fontSize:'1.2rem' }}>Sola Scriptura</h3>
